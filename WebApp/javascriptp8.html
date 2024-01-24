@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label name="f1">FirstName</label>
+    <input type="text" id="firstName" name="fname"/>
+    <label>Password</label>
+    <input type="text" name="pass"/>
+    <input type="submit" value="Login"/>
+    <p id="d1"></p>
+    <script>
+          var elements=document.getElementsByName("f1");
+          document.getElementById("d1").innerHTML=elements[0].tagName;              
+    </script>
+</body>
+</html>

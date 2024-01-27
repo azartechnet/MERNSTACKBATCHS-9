@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p>An Unordered list</p>
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+        </ul>
+        <p>A nested ordered list:</p>
+        <p id="d1"></p>
+        <script>
+            const collection=document.getElementsByTagName("*");
+            let text="";
+            for(let i=0;i<collection.length;i++)
+            {
+                text+=collection[i].tagName+"<br>"
+            }
+            document.getElementById("d1").innerHTML=text;
+        </script>
+    </body>
+</html>

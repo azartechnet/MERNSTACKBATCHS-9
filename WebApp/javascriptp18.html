@@ -1,0 +1,13 @@
+<select id="my1" onchange="myfun1()">
+    <option value="list1">list1</option>
+    <option value="list2">list2</option>
+    <option value="list3">list3</option>
+</select>
+<p id="d1"></p>
+<script>
+    function myfun1()
+    {
+        var x=document.getElementById("my1").value;
+        document.getElementById("d1").innerHTML="You Selected::"+x;
+    }
+</script>

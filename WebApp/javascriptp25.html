@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+          
+            var empname=new Array("John","Mike","Jane");
+            console.log("DataAdded is::"+empname.push(["Tom"]));
+            
+            //Displaying the array elements using for loop
+            console.log("Elements are::");
+             for (var i = 0; i < empname.length; i++) {
+                 console.log(i + " : "+ empname[i]);
+             }
+
+             console.log("DataDeleted is::"+empname.pop())
+             console.log("After deletion is::"+empname)
+
+             console.log("Joining array is::"+empname.join("*"));
+             
+           
+             //Sorting an array in ascending order
+
+              console.log("Array after sorting is::"+empname.sort());
+
+               
+        </script>
+    </body>
+</html>

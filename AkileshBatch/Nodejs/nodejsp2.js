@@ -1,0 +1,5 @@
+console.log("Welcome to log file")
+console.error(new Error("This is Error"))
+console.warn("This is warn")
+console.info("This is info")
+console.debug("This is debug")

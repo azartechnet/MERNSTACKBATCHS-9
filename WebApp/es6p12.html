@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Names</title>
+    <script>
+        const empname = new Map([
+            [1, "John"],
+            [2, "David"],
+            [3, "Jane"]
+        ]);
+
+        function getName(id) {
+            return empname.get(id);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        Employee with ID 1: <span id="emp1"></span><br>
+        Employee with ID 2: <span id="emp2"></span><br>
+        Employee with ID 3: <span id="emp3"></span><br>
+    </div>
+
+    <script>
+        // Retrieving and displaying employee names using the function
+        document.getElementById('emp1').innerText = getName(1);
+        document.getElementById('emp2').innerText = getName(2);
+        document.getElementById('emp3').innerText = getName(3);
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="result"></p>
+        <script>
+            const emp=new Set();
+
+            emp.add("mohamed")
+            emp.add("azar")
+            emp.add("deepa")
+            console.log(emp); // { mohamed, azar, deepa }
+            if (emp.has("azar")){
+                 //console.log("Yes");
+                 document.getElementById( "result" ).innerHTML = "Yes";
+                 }else{
+                     console.log("No");
+                      }
+        </script>
+    </body>
+</html>

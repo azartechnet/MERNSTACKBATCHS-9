@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        Your data is:<b><p id="d1"></p></b>
+        <script>
+            class Employee
+            {
+                constructor(name,age)
+                {
+                    this.name=name;
+                    this.age=age;
+                }
+            }
+            const my1=new Employee("mohamed",34)
+            const my2=new Employee("azar",56)
+
+            document.getElementById("d1").innerHTML=my1.age+""+my2.age;
+            if (my1.age<my2.age) 
+            {
+                   console.log("my1 age is low")
+            }
+            else{
+                 console.log("my2 age is high");
+            }
+
+        </script>
+    </body>
+</html>

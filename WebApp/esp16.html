@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>JavaScript Promise Object</h1>
+        <h1 id="d1"></h1>
+        <script>
+            const my1=new Promise(function(myResolve,myReject){
+                setTimeout(function(){myResolve("Welcome");},3000)
+            });
+            my1.then(function(value){
+                document.getElementById("d1").innerHTML=value;
+            })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+var fs=require('fs')
+var zlib=require('zlib')
+fs.createReadStream('sample1.txt')
+.pipe(new zlib.Gzip())
+.pipe(fs.createWriteStream('sample1.txt.gz'))
+console.log("FileCompressed")

@@ -3,6 +3,7 @@
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
     "os": "^0.1.2",
-    "upper-case": "^3.0.0"
+    "upper-case": "^3.0.0",
+    "zlib": "^1.0.5"
   }
 }

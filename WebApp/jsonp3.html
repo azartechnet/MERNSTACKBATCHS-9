@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <!-- <p id="d1"></p>
+        <script>
+            const text='{"name":"mohamed","age":34, "city":"cairo","birth":"1987-12-14"}';
+            const obj=JSON.parse(text)
+            obj.birth=new Date(obj.birth)
+            document.getElementById("d1").innerHTML=obj.name+","+obj.birth;
+        </script> -->
+        <p id="d1"></p>
+        <script>
+             const text='{"name":"mohamed","age":34, "city":"cairo","birth":"1987-12-14"}';
+
+             const obj=JSON.parse(text,function(key,value){
+                if(key=="birth")
+                {
+                    return new Date(value)
+                }
+                else
+                {
+                    return value;
+                }
+             });
+             document.getElementById("d1").innerHTML=obj.name+","+obj.birth;
+        </script>
+    </body>
+</html>

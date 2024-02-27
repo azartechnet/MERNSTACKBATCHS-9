@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>Based on Index</h1>
+        <p id="d1"></p>
+        <p id="d2"></p>
+        <h1>Based on Given Index</h1>
+        <p id="d3"></p>
+        <script>
+            const text='["Mohamed","raja","mohan"]'
+            const myarr=JSON.parse(text); 
+            document.getElementById('d1').innerHTML=myarr[0];
+            document.getElementById('d2').innerHTML=myarr[1];
+            function showData() {
+                 let x =document.getElementById("show").value;
+                if (isNaN(x) || x > myarr.length - 1){
+                    alert ("Please enter a valid number");
+                }else{
+                   document.getElementById('d3').innerHTML=myarr[x] ;    
+                }
+                }
+        </script>
+        <button type="button"  onclick="showData()">Show Data</button>
+        <input type="number" id="show"/>
+    </body>
+</html>

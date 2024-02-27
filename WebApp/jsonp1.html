@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id="d1"></p>
+        <script>
+            const txt='{"name":"azar","age":35, "city":"Tehran"}';
+            
+            //parse json to object
+            const obj=JSON.parse(txt)
+            console.log(`Name: ${obj.name}`);  
+            console.log(`Age : ${obj.age}`)  ;
+            console.log(`City: ${obj.city}`);    
+            
+            document.getElementById("d1").innerHTML=obj.name+""+obj.age+obj.city;
+        </script>
+    </body>
+</html>

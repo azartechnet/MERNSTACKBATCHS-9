@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            const empname=["a1","a2","a3","a4"]
+            const s1=empname.slice(0, 2); // ["a1", "a2"]
+            console.log("slicing from index 0 to 2: ",s1)
+            
+            let s2 = empname.splice(2, 1,"b3"); // returns ["a3"], does not mutate original array
+                                                // empname becomes ["a1", "a2", "b3"]
+            console.log("after splicing at index 2 with one element and no delete count: ",s2)
+            console.log("after splicing, the array is now: ",empname)
+        </script>
+    </body>
+</html>

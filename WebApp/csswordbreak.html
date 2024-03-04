@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            p
+            {
+                width: 140px;
+                border: 1px solid #000;
+            }
+            p.a
+            {
+                word-wrap: normal;
+              /* word-break: normal; */
+            }
+            p.b
+            {
+                word-break: keep-all;
+            }
+            p.c
+            {
+                word-break: break-all;  
+            }
+            p.d
+            {
+                writing-mode: sideways-lr
+            }
+        </style>
+    </head>
+    <body>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.Et quam est nulla ea neque quo porro ab voluptatibus,
+              minus iste eligendi ex, maxime inventore magni veniam,
+               nemo officiis dignissimos. Blanditiis?
+          </p>
+        <p class="a">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Et quam est nulla ea neque quo porro ab voluptatibus, minus iste eligendi ex, maxime inventore magni veniam, nemo officiis dignissimos. Blanditiis?
+        </p>
+        <p class="b">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Et quam est nulla ea neque quo porro ab voluptatibus,
+              minus iste eligendi ex, maxime inventore magni veniam, nemo officiis dignissimos. Blanditiis?
+          </p>
+          <p class="c">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Et quam est nulla ea neque quo porro ab voluptatibus,
+              minus iste eligendi ex, maxime inventore magni veniam, nemo officiis dignissimos. Blanditiis?
+          </p>
+          <p class="d">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+    </body>
+</html>
